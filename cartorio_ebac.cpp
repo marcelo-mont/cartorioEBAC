@@ -57,7 +57,7 @@ int registro() // Função responsável por cadastrar os usuários no sistema
     fprintf(file, cargo);
     fclose(file);
 
-    printf("Obrigado, seu registro está completo!")
+    printf("Obrigado, seu registro está completo!");
 }
 
 int consulta()
