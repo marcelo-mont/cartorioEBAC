@@ -94,8 +94,6 @@ int apagar()
     printf("Por favor, digite o CPF a ser apagado:");
     scanf("%s", cpf);
 
-    remove(cpf); // Apaga o arquivo com a primary key cpf
-
     FILE *file;
     file = fopen(cpf, "r");
 
@@ -106,6 +104,7 @@ int apagar()
     }
     else
     {
+        remove(cpf); // Apaga o arquivo com a primary key cpf
         printf("CPF apagado com sucesso!.\n");
         system("pause");
     }
